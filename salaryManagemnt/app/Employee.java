@@ -1,5 +1,7 @@
 package com.salaryManagemnt.app;
 
+// pour la class abstrait , on peut pas les instanciers , sauf pour leur fils 
+ //public abstract class Employee{
 public class Employee {
 	String nom; 
 	double salary;

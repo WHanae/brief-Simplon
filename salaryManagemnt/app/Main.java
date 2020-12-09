@@ -4,6 +4,8 @@ public class Main {
 	
 	
 	public static void main(String[] args) {
+		// msg d erreur: on peut pas instancier une class astract
+		//Employee foo = new Employee("foo");
 		EmployeFixe tom = new EmployeFixe("tom", 6000.09);
 		
 		
