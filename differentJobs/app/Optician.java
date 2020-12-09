@@ -4,15 +4,11 @@ public class Optician extends Person{
 
 	public Optician(String name, int age){
 		super(name, age);
-		
+	}
+	
+	@Override
+	public String display() {
+		return super.display()+ " and i'm an optician";
 	}
 
-	@Override
-	public String toString() {
-		return super.toString()+ " and i'm an optician";
-	}
-	
-	
-	
-	
 }

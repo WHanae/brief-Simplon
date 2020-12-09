@@ -8,11 +8,8 @@ public class DriverJobs {
 		person[0] = new Doctor("Maher",31);
 		person[1] = new Optician("Iman",33);
 		
-		
 		for (int i = 0; i < person.length; i++)
-			System.out.println(person[i].toString());
-
+			System.out.println(person[i].display());
 	}
-	
 	
 }

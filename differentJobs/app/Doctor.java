@@ -7,10 +7,9 @@ public class Doctor extends Person {
 		
 	}
 	
-	
 	@Override
-	public String toString() {
-		return super.toString() + " and i'm a doctor";
+	public String display() {
+		return super.display() + " and i'm a doctor";
 	}
 	
 }
