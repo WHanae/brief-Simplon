@@ -10,7 +10,7 @@ public class PaymentSimuator {
 		System.out.print("Please enter your firstname and lastname: ");
 		String name = nameIn.nextLine();
 		
-		System.out.println("You are welcome mr " + name);
+		System.out.println("You are welcome mr " + name); 
 		
 		Scanner hourIn = new Scanner(System.in);
 		System.out.print("Please enter the number of hour worked :");
@@ -19,8 +19,9 @@ public class PaymentSimuator {
 		Scanner tariffIn = new Scanner(System.in);
 		System.out.print("Please enter your rate per hour :");
 		double tariffPerHours = tariffIn.nextInt();
-		double tariffPerhours = tariffPerHours * (numOfHours-40);
-		double extraTariff = tariffPerHours + 0.5 * tariffPerHours;
+		//double tariffPerhours = tariffPerHours * (numOfHours-40);
+		//double extraTariff = tariffPerHours + 0.5 * tariffPerHours;
+		double tarifextra = (tariffPerHours+tariffPerHours*0.5)*(numOfHours-40);
 		
 		if(numOfHours < 40) {
 			double finalTarrif = (numOfHours * tariffPerHours);
@@ -29,7 +30,9 @@ public class PaymentSimuator {
 		
 		else if(numOfHours <= 60) {
 			System.out.println("your compensation is "+ extraTariff);
-			double finalTarrif = (numOfHours * tariffPerHours) + extraTariff;
+			//double finalTarrif = (numOfHours * tariffPerHours) + extraTariff;
+			// correction au niveau de calcul
+				double finalTarrif = (40 * tariffPerHours) + tarifextra;
 			System.out.println("the final tarrif is: "+ finalTarrif);
 		}
 
